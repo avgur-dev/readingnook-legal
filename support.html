@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ReadingNook support — get help with the app." />
+  <title>ReadingNook — Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1c1c1e;
+      --fg-muted: #6c6c70;
+      --bg: #ffffff;
+      --accent: #3b82f6;
+      --rule: #e5e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f2f2f7;
+        --fg-muted: #98989d;
+        --bg: #1c1c1e;
+        --rule: #38383a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text",
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      padding: 32px 20px 80px;
+    }
+    main { max-width: 680px; margin: 0 auto; }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    .subtitle { color: var(--fg-muted); font-size: 15px; margin: 0 0 32px; }
+    h2 { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; margin: 32px 0 8px; }
+    p { margin: 0 0 16px; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      color: var(--fg-muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ReadingNook Support</h1>
+    <p class="subtitle">Reading Tracker</p>
+
+    <h2>Contact</h2>
+    <p>For questions, bug reports, or feedback, email:<br>
+    <a href="mailto:avgur.support@gmail.com">avgur.support@gmail.com</a></p>
+
+    <h2>How do I restore my purchase?</h2>
+    <p>Open the Library tab, tap the Pro banner, then tap Restore Purchases at the bottom of the Pro screen. Your lifetime unlock is tied to the store account that bought it — your Apple ID on iOS, your Google account on Android — and can be restored on any device signed in to that same account at no extra charge. Make sure the device is signed in to the account you originally purchased with.</p>
+
+    <h2>How do I back up my data?</h2>
+    <p>Open the Stats tab and tap Export. This saves a JSON file you can reimport later with Import on the same screen. Both work on every tier.</p>
+
+    <h2>Will my data be lost if I delete the app?</h2>
+    <p>Yes — all data is stored locally on your device, so uninstalling deletes it. Export a backup first (Stats → Export). Your purchase itself is safe either way: it stays on your store account and comes back with Restore Purchases.</p>
+
+    <h2>A book isn't found by its ISBN</h2>
+    <p>Lookups use Open Library, and not every edition is listed there. You can still add the book manually with its title, author, and a cover of your choice.</p>
+
+    <footer>
+      <p>ReadingNook is an independent app. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+    </footer>
+  </main>
+</body>
+</html>

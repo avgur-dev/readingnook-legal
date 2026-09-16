@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ReadingNook privacy policy — what we do and don't collect." />
+  <meta name="robots" content="index, follow" />
+  <title>ReadingNook — Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1c1c1e;
+      --fg-muted: #6c6c70;
+      --bg: #ffffff;
+      --accent: #3b82f6;
+      --rule: #e5e5ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f2f2f7;
+        --fg-muted: #98989d;
+        --bg: #1c1c1e;
+        --rule: #38383a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text",
+            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      padding: 32px 20px 80px;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    .subtitle {
+      color: var(--fg-muted);
+      font-size: 15px;
+      margin: 0 0 32px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 32px 0 8px;
+    }
+    p { margin: 0 0 16px; }
+    ul {
+      padding-left: 20px;
+      margin: 0 0 16px;
+    }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); }
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 32px 0;
+    }
+    .tldr {
+      background: rgba(59, 130, 246, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 0 0 32px;
+    }
+    .tldr p:last-child { margin-bottom: 0; }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      color: var(--fg-muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ReadingNook Privacy Policy</h1>
+    <p class="subtitle">Last updated: 2026-09-16</p>
+
+    <div class="tldr">
+      <p><strong>TL;DR:</strong> ReadingNook collects nothing about you. Your books, reading log, goals, and statistics live in your device's local storage. There are no accounts, no servers of ours, no analytics, and no ads. The only data that leaves your device is an ISBN you choose to look up, sent to Open Library to fetch that book's details and cover.</p>
+    </div>
+
+    <h2>What we collect</h2>
+    <p>Nothing personal. ReadingNook does not require an account, does not transmit your library to any server of ours, and does not contain any analytics, advertising, or crash-reporting SDKs.</p>
+
+    <h2>Where your data lives</h2>
+    <p>All books, reading history, goals, collections, tags, notes, ratings, and the cover images you add are stored locally in your device's app sandbox using SQLite and the app's private files. Nothing is uploaded.</p>
+
+    <h2>Book lookups</h2>
+    <p>When you scan a barcode or enter an ISBN, ReadingNook sends that ISBN to Open Library (openlibrary.org, a project of the Internet Archive) to fetch the book's title, author, and cover image. Like any web request, this reveals your device's IP address to Open Library. Nothing else about you or your library is sent, lookups happen only when you trigger them, and results are cached on your device. Open Library's handling of requests is described in the <a href="https://archive.org/about/terms.php" rel="noopener">Internet Archive's privacy policy</a>.</p>
+
+    <h2>Purchases</h2>
+    <p>The Pro unlock is an In-App Purchase processed entirely by Apple (App Store) or Google (Google Play) under their own terms and privacy policies. We never see your payment details. The app keeps a record of the purchase on your device so that Pro keeps working offline; it is not sent anywhere else.</p>
+
+    <h2>Backup files</h2>
+    <p>The Export feature creates a JSON backup file on your device, which you choose where to save (for example: Files, iCloud Drive, email). We do not see, store, or transmit this file. The Import feature reads from a file you select; processing happens entirely on-device.</p>
+    <p>iOS users with iCloud Backup enabled and Android users on Google Auto Backup will have ReadingNook data automatically backed up to their personal cloud storage by the operating system. This is a system-level feature; ReadingNook has no access to or visibility into these backups.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — only while the barcode scanner is open, to read a book's barcode. Camera frames are processed on-device and are never stored or transmitted.</li>
+      <li><strong>Photos</strong> — only when you choose a cover image from your photo library. The selected image is copied into the app's private storage; no other photos are accessed.</li>
+      <li><strong>File access</strong> — only when you tap Export or Import. You select the file, the OS hands it to the app, and ReadingNook has no access to other files on your device.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>ReadingNook does not knowingly collect data from children — because ReadingNook does not collect data from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy ever changes, we'll update the "Last updated" date above. For material changes (e.g. if ReadingNook ever adds a feature that does collect data), we will notify users in-app before the change takes effect.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or concerns? Email <a href="mailto:avgur.support@gmail.com">avgur.support@gmail.com</a>.</p>
+
+    <footer>
+      <p>ReadingNook is an independent app. This policy applies only to ReadingNook.</p>
+    </footer>
+  </main>
+</body>
+</html>
