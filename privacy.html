@@ -90,11 +90,11 @@
     <p class="subtitle">Last updated: 2026-10-19</p>
 
     <div class="tldr">
-      <p><strong>TL;DR:</strong> Bookbliss collects nothing about you. Your books, reading log, goals, and statistics live in your device's local storage. There are no accounts, no servers of ours, no ads, and no analytics that report to us. Only two things ever leave your device: an ISBN you choose to look up, sent to Open Library to fetch that book's details and cover, and — on Android only — basic diagnostics that the barcode scanner's Google ML Kit component sends to Google (see <a href="#camera">Camera</a>). Never your library, your photos, or the images the scanner sees.</p>
+      <p><strong>TL;DR:</strong> Bookbliss collects nothing about you. Your books, reading log, goals, and statistics live in your device's local storage. There are no accounts, no servers of ours, no ads, and no analytics that report to us. Only two things ever leave your device: an ISBN you choose to look up, sent to Open Library to fetch that book's details and cover, and — on Android only — basic diagnostics that the barcode scanner's Google ML Kit component sends to Google (see <a href="#camera">Camera</a>). Never your library, your photos, or the images the scanner sees. If you email us for support, we receive what you send (see <a href="#support">Support emails</a>).</p>
     </div>
 
     <h2>What we collect</h2>
-    <p>Nothing personal. Bookbliss does not require an account, does not transmit your library to any server of ours, and does not contain any advertising or crash-reporting SDKs, or analytics that report to us. The one third-party component that sends anything on its own is Google ML Kit, which reads barcodes on Android — see <a href="#camera">Camera</a> below.</p>
+    <p>Nothing personal. Bookbliss does not require an account, does not transmit your library to any server of ours, and does not contain any advertising or crash-reporting SDKs, or analytics that report to us. The one third-party component that sends anything on its own is Google ML Kit, which reads barcodes on Android — see <a href="#camera">Camera</a> below. The only time we receive anything is when you email us.</p>
 
     <h2>Where your data lives</h2>
     <p>All books, reading history, goals, collections, genres, notes, ratings, and the cover images you add are stored locally in your device's app sandbox using SQLite and the app's private files. Nothing is uploaded.</p>
@@ -114,6 +114,16 @@
       <li id="camera"><strong>Camera</strong> — only while the barcode scanner is open, to read a book's barcode. Camera frames are processed on-device and are never stored or transmitted. On iPhone, barcodes are read by Apple's built-in camera framework and nothing is sent. On Android, barcodes are read by Google's ML Kit, which sends Google diagnostic information about the scanner: device model and OS version, the app's name and version, a per-installation identifier that is not meant to identify you or your device, and performance metrics and error codes. Google encrypts this in transit, uses it for diagnostics and to improve ML Kit, and does not share it with third parties — see Google's <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener">ML Kit data disclosure</a>.</li>
       <li><strong>Photos</strong> — only when you choose a cover image from your photo library. The selected image is copied into the app's private storage; no other photos are accessed.</li>
       <li><strong>File access</strong> — only when you tap Export Library or Import Library. You select the file, the OS hands it to the app, and Bookbliss has no access to other files on your device.</li>
+    </ul>
+
+    <h2 id="support">Support emails</h2>
+    <p>Contact Support (in Settings) opens a draft in your own mail app. Below your message, the draft lists the app version, your OS version, your device model (Android only), and whether Pro is unlocked, so we can look into your issue without asking. You can edit or delete those lines before sending. If you send it, we receive your email address, your message, and whatever the draft still contains. We use it only to answer you, and we never sell or share it.</p>
+
+    <h2>Keeping and deleting your data</h2>
+    <ul>
+      <li><strong>Your library</strong> stays on your device until you delete it. Remove individual books in the app, or uninstall Bookbliss to delete everything. Backup files you exported are yours to keep or delete.</li>
+      <li><strong>Support emails</strong> are kept only as long as we need them to help you. Email <a href="mailto:avgur.support@gmail.com">avgur.support@gmail.com</a> and we will delete yours.</li>
+      <li><strong>ML Kit diagnostics</strong> (Android only) are held by Google under its <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener">ML Kit data disclosure</a>. We never receive them.</li>
     </ul>
 
     <h2>Children</h2>
